@@ -59,9 +59,9 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_label": "Enquire Now",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": true
           }
         }
       },
