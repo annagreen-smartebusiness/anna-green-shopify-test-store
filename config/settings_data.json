@@ -31,10 +31,18 @@
               "heading": "Show and Skate",
               "menu": "footer"
             }
+          },
+          "e81fd7d3-fb87-4bc4-affe-cd60c71f5f20": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Customer Service",
+              "menu": "footer-menu-2"
+            }
           }
         },
         "block_order": [
-          "footer-0"
+          "footer-0",
+          "e81fd7d3-fb87-4bc4-affe-cd60c71f5f20"
         ],
         "settings": {
           "color_scheme": "background-1",
