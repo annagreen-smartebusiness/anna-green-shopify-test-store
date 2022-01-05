@@ -268,7 +268,7 @@ body,
 @media screen and (min-width: 750px) {
   .background-secondary {
     padding: calc(6rem + var(--page-width-margin)) 0
-      calc(5rem + var(--page-width-margin));
+    calc(5rem + var(--page-width-margin));
   }
 }
 
@@ -766,7 +766,7 @@ summary::-webkit-details-marker {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
@@ -775,7 +775,7 @@ summary::-webkit-details-marker {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 /* Negate the fallback side-effect for browsers that support :focus-visible */
@@ -820,7 +820,7 @@ summary::-webkit-details-marker {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 1rem;
   box-shadow: 0 0 0 1rem rgb(var(--color-background)),
-    0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
+  0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
 }
 
 .focus-offset.focused,
@@ -828,7 +828,7 @@ summary::-webkit-details-marker {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 1rem;
   box-shadow: 0 0 0 1rem rgb(var(--color-background)),
-    0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
+  0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
 }
 
 .no-js .focus-offset:focus:not(:focus-visible) {
@@ -1216,14 +1216,14 @@ deferred-media {
 
 .button:focus-visible {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border)),
-    0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  0 0 0 0.3rem rgb(var(--color-background)),
+  0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 .button:focus {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border)),
-    0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  0 0 0 0.3rem rgb(var(--color-background)),
+  0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 .button:focus:not(:focus-visible) {
@@ -1511,7 +1511,7 @@ details[open] > .share-button__fallback {
   pointer-events: none;
   position: absolute;
   transition: top var(--duration-short) ease,
-    font-size var(--duration-short) ease;
+  font-size var(--duration-short) ease;
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
@@ -1878,7 +1878,8 @@ input[type='checkbox'] {
 }
 
 .header {
-  display: grid;
+  display: table;
+  width: 100%;
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
@@ -1987,16 +1988,23 @@ input[type='checkbox'] {
 
 /* Header icons */
 .header__icons {
-  display: flex;
-  grid-area: icons;
-  justify-self: end;
+  display: block;
+  float: right;
+  width: 100%;
+}
+
+.headerLogo {
+  text-align: center;
+}
+
+.headerLogo h1 {
+  margin: 0;
 }
 
 .header__icon:not(.header__icon--summary),
 .header__icon span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  float: right;
 }
 
 .header__icon {
@@ -2004,6 +2012,10 @@ input[type='checkbox'] {
 }
 
 .header__icon span {
+  display: block;
+  float: none;
+  text-align: center;
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -2020,13 +2032,17 @@ input[type='checkbox'] {
   height: 2rem;
   width: 2rem;
   fill: none;
-  vertical-align: middle;
+  vertical-align: bottom;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .header__icon,
 .header__icon--cart .icon {
   height: 4.4rem;
   width: 4.4rem;
+  display: block;
+  vertical-align: middle;
 }
 
 .header__icon--cart {
@@ -2070,7 +2086,9 @@ menu-drawer + .header__search {
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
   .header--top-center > .header__search {
-    display: inline-flex;
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
   }
 
   .header:not(.header--top-center) > .header__search,
@@ -2191,6 +2209,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   margin-left: -1.2rem;
   grid-area: navigation;
   display: none;
+  text-align: center;
 }
 
 .header--top-center .header__inline-menu,
@@ -2252,7 +2271,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 .header__submenu {
   transition: opacity var(--duration-default) ease,
-    transform var(--duration-default) ease;
+  transform var(--duration-default) ease;
 }
 
 .header__submenu.list-menu {
