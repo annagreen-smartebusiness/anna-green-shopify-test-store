@@ -50,7 +50,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Terms and Conditions",
-              "menu": "footer"
+              "menu": "footer-menu-2"
             }
           }
         },
