@@ -45,12 +45,20 @@
               "heading": "Quick links",
               "menu": "footer"
             }
+          },
+          "b5da50e3-bc8f-448a-8580-978270bd331a": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Terms and Conditions",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "footer-0",
           "e81fd7d3-fb87-4bc4-affe-cd60c71f5f20",
-          "8b5ecf65-88b2-4f8c-830d-db278c59e4ab"
+          "8b5ecf65-88b2-4f8c-830d-db278c59e4ab",
+          "b5da50e3-bc8f-448a-8580-978270bd331a"
         ],
         "settings": {
           "color_scheme": "background-1",
