@@ -89,6 +89,7 @@
         "347d6070-c33c-42da-b848-58bf353412df": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/FB_IMG_1641393351779.jpg",
             "image_padding": false,
             "color_scheme": "background-1"
           }
@@ -96,6 +97,7 @@
         "00e38ae7-89b3-47aa-9976-3bf9967eb26b": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/FB_IMG_1641398278460.jpg",
             "image_padding": false,
             "color_scheme": "background-1"
           }
