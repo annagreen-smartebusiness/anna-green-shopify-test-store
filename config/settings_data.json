@@ -38,11 +38,19 @@
               "heading": "Customer Service",
               "menu": "footer-menu-2"
             }
+          },
+          "8b5ecf65-88b2-4f8c-830d-db278c59e4ab": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "e81fd7d3-fb87-4bc4-affe-cd60c71f5f20"
+          "e81fd7d3-fb87-4bc4-affe-cd60c71f5f20",
+          "8b5ecf65-88b2-4f8c-830d-db278c59e4ab"
         ],
         "settings": {
           "color_scheme": "background-1",
