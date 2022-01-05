@@ -206,6 +206,11 @@ html.no-js .no-js-hidden {
     padding: 0;
   }
 
+  .header__icons {
+    position: absolute;
+    right: 0; 
+  }
+
   .page-width-desktop {
     max-width: var(--page-width);
     padding: 0 5rem;
