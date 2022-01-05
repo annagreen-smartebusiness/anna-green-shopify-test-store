@@ -110,8 +110,8 @@
         "collection"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "desktop_layout": "left",
+        "heading": "Our Previous Shows",
+        "desktop_layout": "right",
         "mobile_layout": "collage"
       }
     },
