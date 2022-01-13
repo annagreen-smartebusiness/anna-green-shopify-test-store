@@ -9,6 +9,9 @@
     "colors_background_2": "#F3F3F3",
     "type_header_font": "century_gothic_n4",
     "type_body_font": "century_gothic_n4",
+    "accent_icons": "accent-1",
+    "social_twitter_link": "https:\/\/twitter.com\/annagreen515",
+    "social_instagram_link": "https:\/\/www.instagram.com\/annagreen241\/",
     "sections": {
       "header": {
         "type": "header",
